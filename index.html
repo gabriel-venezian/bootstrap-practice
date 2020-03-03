@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<title>Bootstrap Practice</title>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-black">
+    <div class="container">
+      <a class="navbar-brand h1 mb-0" href="#">Practice</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Network
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Facebook</a>
+              <a class="dropdown-item" href="#">Instagram</a>
+              <!-- <div class="dropdown-divider"></div> -->
+              <a class="dropdown-item" href="#">Twitter</a>
+              <a class="dropdown-item" href="#">Whatsapp</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2 ml-4" type="search" placeholder="Buscar..." aria-label="Search">
+          <button class="btn btn-black my-2 my-sm-0 ml-2" type="submit">OK</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- carousel -->
+  <div data-interval="5000" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/img1.jpg" class="d-block w-100" alt="Imagem não encontrada.">
+        <div class="carousel-caption">
+          <h3>Uchiha Itachi</h3>
+          <p>うちはイタチ</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/img2.jpg" class="d-block w-100" alt="Imagem não encontrada.">
+        <div class="carousel-caption">
+          <h3>Hatake Kakashi</h3>
+          <p>はたけカカシ</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/img3.jpg" class="d-block w-100" alt="Imagem não encontrada.">
+        <div class="carousel-caption">
+          <h3>Kurosaki Ichigo</h3>
+          <p>黒崎 一護</p>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon d-none d-md-block" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon d-none d-md-block" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active d-none d-md-block"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="d-none d-md-block"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2" class="d-none d-md-block"></li>
+      </ol>
+    </div>
+
+    <!-- welcome -->
+    <div class="container white">
+      <div class="row">
+        <div class="col-12 text-center my-2">
+          <h3>Welcome to my Bootstrap Practice </h3>
+          <p class="sub">Learning some components of this framework.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- scrollspy -->
+    <div class="row-scrollspy">
+      <nav id="navbar-vertical" class="navbar navbar-dark bg-gradient-black">
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link" href="#item-1">Uchiha Itachi</a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ml-3 my-1" href="#item-1-1">About</a>
+            <a class="nav-link ml-3 my-1" href="#item-1-2">Personality</a>
+            <a class="nav-link ml-3 my-1" href="#item-1-3">Powers</a>
+          </nav>
+          <a class="nav-link" href="#item-2">Hatake Kakashi</a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ml-3 my-1" href="#item-2-1">About</a>
+            <a class="nav-link ml-3 my-1" href="#item-2-2">Personality</a>
+            <a class="nav-link ml-3 my-1" href="#item-2-3">Powers</a>
+          </nav>
+          <a class="nav-link" href="#item-3">Kurosaki Ichigo</a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ml-3 my-1" href="#item-3-1">About</a>
+            <a class="nav-link ml-3 my-1" href="#item-3-2">Personality</a>
+            <a class="nav-link ml-3 my-1" href="#item-3-3">Powers</a>
+          </nav>
+        </nav>
+      </nav>
+
+      <div class="scrollspy" data-spy="scroll" data-target="#navbar-vertical" data-offset="0">
+        <h4 class="white" id="item-1">Uchiha Itachi</h4>
+        <h5 class="white" id="item-1-1">About</h5>
+        <p class="white">
+          Itachi Uchiha (うちはイタチ, <i>Uchiha Itachi</i>) was a ninja of Konohagakure's Uchiha clan that served as an
+          Anbu Captain.
+          He later became an international criminal after murdering his entire clan, sparing only his younger
+          brother, Sasuke.
+          He afterwards joined the international criminal organisation known as Akatsuki, whose activity brought
+          him
+          into frequent
+          conflict with Konoha and its ninja — including Sasuke — who sought to avenge their clan by killing
+          Itachi.
+          Following his death,
+          Itachi's motives were revealed to be more complicated than they seemed and that his actions were only
+          ever
+          in the interest of his
+          brother and village, making him remain a loyal shinobi of Konohagakure to the very end.
+          A pacifist at heart, Itachi did not actually like fighting and would avoid it when he could. When he couldn't,
+          he would end the fight
+          as quickly as possible, all the while holding himself back as much as possible. Despite this, Itachi felt his
+          own needs were secondary
+          to the greater good's and to that end he became a shinobi. He trained tirelessly to improve himself as quickly
+          as he could and subjected
+          himself to all of the shinobi life's inconveniences without complaint for the simple motivation of being
+          useful to others. His commitment
+          borderlined recklessness, due to training privately using extremely deadly methods such as dodging a barrage
+          of kunai
+
+        </p>
+        <h5 class="white" id="item-1-2">Personality</h5>
+        <p class="white">
+          From a young age, Itachi was calm and insightful, showing noticeable maturity for his age and knowledge
+          on
+          how to deal with every
+          situation. For all his accomplishments, talent, and fame, Itachi was a rather humble man. Never arrogant
+          about his own abilities nor
+          underestimating others, most things he said would be unbiased and accurate. If an opponent exceeded his
+          expectations or posed a
+          legitimate challenge to him or his allies, Itachi would freely admit it. As a seven-year-old, his
+          reasoning
+          was on par with a Hokage.
+          Having studied history, not just of his clan or his village but of the world, he gained a broader
+          appreciation of what was important.
+          Learning so much enabled him to understand how events of the past came to happen and, when he applied
+          that
+          same understanding into the
+          future, he became concerned for where things were going. At the same time, Itachi was still fairly
+          naïve
+          as a child in many
+          real-world scenarios and as such was willing to learn from his peers on how to differentiate situations.
+          He
+          lived at a distance,
+          observing individuals and ideas without getting directly involved so that he could fully understand
+          them..
+        </p>
+        <h5 class="white" id="item-1-3">Powers</h5>
+        <p class="white">
+          Even within the famed and battle-adept Uchiha clan, Itachi was a genius of such talent,
+          consistently showing prowess well-beyond his years, effortlessly learning new techniques
+          from simple observation, and rising rapidly through the ninja ranks. His prowess rivalled
+          Shisui Uchiha, who was well-regarded as the strongest Uchiha of their time. He was highly
+          proficient in all three main ninja skill sets and gained praise from allies and foes alike;
+          Orochimaru, one of the Sannin, openly admitted Itachi was stronger than he was. Obito revealed
+          that despite having an unknown illness and Sasuke having absorbed Orochimaru's power, Itachi
+          could have killed Sasuke during their battle if he wanted to. Even when restrained in this way,
+          a team of jōnin were still pushed to their limits against Itachi.
+          As an Uchiha, Itachi's chakra was naturally strong, but his actual reserves were greatly diminished due to his
+          terminal illness.
+          Under normal circumstances, just three uses of his Mangekyō Sharingan in a single day made him unable to use
+          his Sharingan and he
+          would require significant bed rest afterwards to regain his strength. This prevented him from participating in
+          prolonged battles and
+          limited his usage of powerful techniques a day before needing significant rest. Itachi had very refined chakra
+          control, however,
+          which compensated for this, even able to perform his techniques with one-handed seals.
+        </p>
+
+        <h4 class="white" id="item-2">Hatake Kakashi</h4>
+        <h5 class="white" id="item-2-1">About</h5>
+        <p class="white">
+          Kakashi Hatake (はたけカカシ, <i>Hatake Kakashi</i>) is a shinobi of Konohagakure's Hatake clan. Famed as Kakashi
+          of the Sharingan
+          (写輪眼のカカシ, <i>Sharingan no Kakashi</i>), he is one of Konoha's most talented ninja; regularly looked to for
+          advice and leadership
+          despite his personal dislike of responsibility. To his students on Team 7, Kakashi teaches the importance of
+          teamwork, a lesson he
+          received, along with the Sharingan, from his childhood friend, Obito Uchiha. After the Fourth Shinobi World
+          War, Kakashi becomes
+          Konoha's Sixth Hokage (六代目火影, <i>Rokudaime Hokage</i>, Literally meaning: Sixth Fire Shadow).
+        </p>
+        <h5 class="white" id="item-2-2">Personality</h5>
+        <p class="white"> Since his early childhood, Kakashi was very independent and self-confident, at times even
+          appearing arrogant
+          and condescending.
+          Despite that, Kakashi was very perceptive and intuitive, quickly realising the situation for what it was.
+          After his father's death,
+          Kakashi became more stern, aloof and cold toward others, following all the rules to the letter, chastising
+          any who disobeyed them and
+          being willing to abandon his comrades to finish missions. As an adult, Kakashi typically has a relaxed and
+          almost bored attitude, not
+          prone to getting too worked up about anything or by anyone. Despite his increasingly growing reputation and
+          prowess as a ninja, Kakashi
+          has shown no signs of arrogance, and is rather modest about his abilities. He is habitually tardy, showing
+          up when it suits him, using
+          excuses that convince nobody, and later leaving for equally poor reasons. Though Kakashi wants others to
+          believe this is how he always
+          acts, he only does so for matters that aren't of particular importance.
+        </p>
+        <h5 class="white" id="item-2-3">Powers</h5>
+        <p class="white">
+          Kakashi is a natural prodigy, evidenced by his rapid rise through the ninja ranks. His feats and renown cause
+          him to be recognised on sight by foreign ninja like Zabuza Momochi and the Fourth Raikage. Several members of
+          Akatsuki
+          considered him to be strong; he was deemed by Itachi Uchiha to be a dangerous opponent, fought Kakuzu to a
+          standstill
+          despite the S-rank ninja's abilities, and was viewed by Pain as a major threat. Kakashi is valued highly for
+          his combat
+          prowess and leadership skills, to the point that many foresaw his rise to Hokage status years before it
+          happened. His prowess
+          is so impressive that some believe he could take on an entire country
+        </p>
+
+        <h4 class="white" id="item-3">Kurosaki Ichigo</h4>
+        <h5 class="white" id="item-3-1">About</h5>
+        <p class="white">
+          Ichigo Kurosaki (黒崎 一護, <i>Kurosaki Ichigo</i>) is a Human who is also a Substitute Shinigami. Ichigo is the
+          son of Isshin and
+          Masaki Kurosaki, and older brother of Karin and Yuzu. He is also married to Orihime Inoue and has a son
+          named Kazui Kurosaki.
+          Ichigo's most distinguishing feature is his spiky orange hair, a trait he has been ridiculed about for years
+          on end.
+          He is a fairly tall, lean-built young man with peach skin and brown eyes. He likes to wear slim fitting
+          clothes. He
+          has a tendency to wear shirts patterned with the number 15 because his name is a homonym for the number. Since
+          becoming
+          a Shinigami, he has become noticeably more muscular, as noted by his sister Karin. When in his spiritual form,
+          Ichigo wears
+          the standard Shinigami attire, with the addition of a strap across his chest. Initially, it was a thick brown
+          belt to hold
+          his Zanpakutō sheath, but it later became a red rosary-like strap after awakening his own Shinigami powers. It
+          is shaped
+          like a kite with a flat top and bottom. Ichigo's appearance has caused several people, including Jūshirō
+          Ukitake, to
+          note a similarity to Kaien Shiba, the former lieutenant of the 13th Division. After training in the Dangai,
+          Ichigo's hair
+          grows considerably, and he is noticeably taller, as stated by his friends. After Ichigo loses his Shinigami
+          powers, his appearance
+          reverts to the way it was before his Dangai training.
+        </p>
+        <h5 class="white" id="item-3-2">Personality</h5>
+        <p class="white">
+          When he was younger, Ichigo considered his mother to be the center of his world, always smiling when he was
+          with Masaki and regularly
+          holding her hand. Despite crying whenever he lost in a match at the dojo he attended, Ichigo started to smile
+          again as soon as he saw
+          Masaki when she came to pick him up. At a very young age, Ichigo heard his father saying his name means "to
+          protect one thing," which
+          instilled in him a desire to protect his mother. When his sisters were born, he began attending a dojo for the
+          sake of protecting them.
+          Since then, the number of people he wishes to protect has continued to grow, causing Ichigo to risk his life
+          to protect both the people
+          close to him and complete strangers.
+          As a teenager, Ichigo is stubborn, short-tempered, strong-willed, and impulsive. Despite claiming not to care
+          about what other people
+          think about him, he attempts to maintain a detached and "cool" image. He generally keeps his face set in a
+          near-permanent scowl, with
+          his eyebrows drawn together. His outspoken, hot-headed demeanor is a trait Ichigo himself has acknowledged,
+          and if somebody picks a
+          fight with him, he cannot help fighting back. He coldly refers to his teachers as "instructors". He is
+          genuinely compassionate and
+          empathetic towards others, promising to bring a Plus flowers and a toy plane, or soothing others when they
+          become upset.
+        </p>
+        <h5 class="white" id="item-3-3">Powers</h5>
+        <p class="white">
+          Keen Intellect: Despite his somewhat punkish attitude, Ichigo is analytical, perceptive, and deductive. In his
+          high school, Ichigo's
+          grades are almost always near the top, despite his work as a Substitute Shinigami. Aside from that, Ichigo can
+          determine the pattern
+          of his opponent's battle methods and form a proper counter-strategy to defeat his opponent's attacks.
+          Immense Spiritual Power: Ichigo has been noted on several occasions to have tremendously vast levels of
+          spiritual energy,
+          well beyond most other Shinigami. His spiritual power is noted to be heavy, which surprised Renji Abarai.
+          Ichigo constantly gives
+          off Reiatsu at the level of a captain. Even when worn-out in battle, he can continue fighting effectively
+          while still using Getsuga
+          Tenshō or unleashing and maintaining his Bankai. Even at less than half strength, his spiritual energy is
+          comparable to a captain-level
+          fighter. His energy is strong enough to hold back the Sōkyoku, a halberd with the destructive force equivalent
+          to one million Zanpakutō
+          combined, using only his Zanpakutō. Even before his Dangai training, he could sense Aizen's increased Reiatsu
+          as a result of his Second
+          Fusion with the Hōgyoku while fighting Gin from a considerable distance away, despite his father, Urahara, and
+          Yoruichi, all former Gotei 13
+          Captains, not being able to do so themselves while fighting him directly. His Reiatsu is light-blue in color.
+          After his training at the
+          Soul King Palace, Ichigo was able to overwhelm four Sternritter simultaneously and then calmly fight on par
+          with a Sternritter using
+          Quincy: Vollständig using just his Shikai and eventually overpower his foe.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- cards -->
+    <div class="container col">
+      <div class="row-card my-4">
+
+        <div class="col-sm-3">
+          <div class="card bg-gradient-black" style="width: 18rem;">
+            <img src="img/akatsuki.jpg" width="362" height="237" class="card-img-top" alt="...">
+            <div class="card-body bg-gradient-black">
+              <h5 class="card-title white">Akatsuki</h5>
+              <p class="card-text white justify">
+                Akatsuki (暁, <i>Literally meaning</i>: "Dawn" or "Daybreak") was a group of shinobi that existed outside
+                the usual system of hidden
+                villages.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-gradient-black white">Uzumaki Nagato</li>
+              <li class="list-group-item bg-gradient-black white">Yahiko</li>
+              <li class="list-group-item bg-gradient-black white">Konan</li>
+            </ul>
+            <div class="card-body">
+              <!-- modal akatsuki's history -->
+              <button type="button" class="btn btn-black" data-toggle="modal" data-target="#exampleModalScrollable1">
+                History
+              </button>
+              <div class="modal fade" id="exampleModalScrollable1" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalScrollableTitle1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header bg-gradient-black">
+                      <h5 class="modal-title white" id="exampleModalScrollableTitle1">Akatsuki History</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body bg-gradient-black white">
+                      The initial concept of Akatsuki was devised by Black Zetsu as part of its plan to revive its
+                      mother, though it pretended the idea
+                      came from Madara Uchiha. Akatsuki was originally founded by Yahiko during the Third Shinobi World
+                      War alongside his childhood
+                      friends, Nagato and Konan. As citizens of Amegakure who had been orphaned by the Second Shinobi
+                      World War, the three created Akatsuki
+                      as a way to bring peace to their home country, which too often got caught in the crossfire of the
+                      Five Great Shinobi Countries' many
+                      conflicts. In time, the three were approached by Tobi, who introduced himself as Madara Uchiha.
+                      Tobi claimed Nagato was the
+                      reincarnation of the Sage of Six Paths and offered to teach him to control the power of his
+                      Rinnegan, though Yahiko distrusted him
+                      and prompted Nagato to turn down his offer. Nevertheless, Tobi would later claim that it was he
+                      who encouraged Yahiko to form Akatsuki,
+                      unbeknownst to Konan.
+                      Akatsuki's desire for an end to war attracted many fellow Ame ninja to their cause and, in time,
+                      word of their exploits began to travel
+                      beyond Amegakure's borders. Akatsuki's early fame was owed largely to Yahiko's leadership and his
+                      natural charisma, which kept the group
+                      united and motivated them to persevere despite the difficulties of their goal. Yahiko, however,
+                      viewed himself as merely a facilitator for
+                      Nagato, who would ultimately be the actual source of world peace because of his Rinnegan. Ame's
+                      leader, Hanzō, also became aware of Akatsuki
+                      and perceived them as a threat to his rule, a belief encouraged by Danzō Shimura in the anime.
+                      Hanzō approached Akatsuki offering to help them
+                      broker peace between Konohagakure, Iwagakure, and Sunagakure. When Yahiko, Nagato, and Konan
+                      arrived to meet with him, however, they were
+                      ambushed by Hanzō's men and members of Danzō's Root, who took Konan hostage and forced Yahiko to
+                      commit suicide in order to save her. Enraged
+                      by Yahiko's death, Nagato summoned the Demonic Statue of the Outer Path and used it to slaughter
+                      their attackers, though Hanzō himself escaped.
+                      In the anime, the other members of Akatsuki were tipped off to Hanzō's plan and attempted to
+                      provide backup to Yahiko and the others.
+                      Tobi and Zetsu intercepted them and after a long battle, Tobi killed the remaining members of the
+                      group.
+                    </div>
+                    <div class="modal-footer bg-gradient-black">
+                      <button type="button" class="btn btn-black" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- modal akatsuki's members -->
+              <button type="button" class="btn btn-black" data-toggle="modal" data-target="#exampleModalScrollable2">
+                Members
+              </button>
+              <div class="modal fade" id="exampleModalScrollable2" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalScrollableTitle2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header bg-gradient-black">
+                      <h5 class="modal-title white" id="exampleModalScrollableTitle2">Akatsuki History</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body bg-gradient-black white">
+                      <div class="row">
+                        <div class="clearfix">
+                          <img class="ml-4 mr-4 img-modal" src="img/akatsuki-members/pain.jpg" width="200" height="150">
+                          <h5 class="modal-h5">Pain</h5>
+                          <p class="modal-button justify mr-4">
+                            Pain, the main body of Nagato, which is Yahiko's body, was trained by Jiraya. Represents the
+                            leader of Akatsuki.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="clearfix">
+                          <img class="ml-4 mr-4 img-modal mt-3" src="img/akatsuki-members/nagato.jpg" width="200" height="150">
+                          <h5 class="modal-h5 mt-3">Nagato</h5>
+                          <p class="modal-button justify mr-4">
+                            Nagato was a shinobi of Amegakure and descendant of the Uzumaki clan. Forming Akatsuki 
+                            dreamed of bringing peace to the violent shinobi world.
+                          </p>
+                        </div>
+                      </div>
+
+
+
+
+
+
+
+                    </div>
+                    <div class="modal-footer bg-gradient-black">
+                      <button type="button" class="btn btn-black" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-3">
+          <div class="card bg-gradient-black" style="width: 18rem;">
+            <img src="img/konoha.png" width="362" height="237" class="card-img-top" alt="...">
+            <div class="card-body bg-gradient-black">
+              <h5 class="card-title white">Konohagakure</h5>
+              <p class="card-text white justify">
+                Konohagakure (木ノ葉隠れの里, <i>Konohagakure no Sato, literally meaning</i>: Village Hidden by Tree Leaves) is
+                the hidden village of the
+                Land of Fire.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-gradient-black white">Uzumaki Naruto</li>
+              <li class="list-group-item bg-gradient-black white">Hatake Kakashi</li>
+              <li class="list-group-item bg-gradient-black white">Senju Tsunade</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">History</a>
+              <a href="#" class="card-link">Hokages</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-3">
+          <div class="card bg-gradient-black" style="width: 18rem;">
+            <img src="img/uchiha.png" width="362" height="237" class="card-img-top" alt="...">
+            <div class="card-body bg-gradient-black">
+              <h5 class="card-title white">Uchiha</h5>
+              <p class="card-text white justify">
+                The Uchiha clan (うちは一族, <i>Uchiha Ichizoku</i>) is one of the four noble clans of Konohagakure, the
+                village's strongest
+                because of their Sharingan.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-gradient-black white">Uchiha Itachi</li>
+              <li class="list-group-item bg-gradient-black white">Uchiha Shisui</li>
+              <li class="list-group-item bg-gradient-black white">Uchiha Madara</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">History</a>
+              <a href="#" class="card-link">Members</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card bg-gradient-black" style="width: 18rem;">
+            <img src="img/shinigami.jpg" width="362" height="237" class="card-img-top" alt="...">
+            <div class="card-body bg-gradient-black">
+              <h5 class="card-title white">Shinigami</h5>
+              <p class="card-text white justify">
+                Shinigami (死神, <i>Death God</i> or <i>Soul Reaper</i>) are guardians of the souls who are going through
+                the circle of transmigration.
+                Were known as Balancers
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-gradient-black white">Kuchiki Byakuya</li>
+              <li class="list-group-item bg-gradient-black white">Ichimaru Gin</li>
+              <li class="list-group-item bg-gradient-black white">Kurosaki Ichigo</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">History</a>
+              <a href="#" class="card-link">Captains</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>

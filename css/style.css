@@ -1,0 +1,45 @@
+body {
+    background-color: #242424;
+}
+
+.white {
+    color: white;
+}
+
+.sub {
+    font-size: 25px;
+}
+
+.scrollspy {
+    position: relative;
+    overflow: auto;
+    height: 567px;
+    width: 1120px;
+    text-align: justify;
+}
+
+.row-scrollspy {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.row-card {
+    display: flex;
+    margin-left: 40px;
+}
+
+.clearfix {
+    overflow: auto;
+  }
+
+.img-modal {
+    float: left;
+}
