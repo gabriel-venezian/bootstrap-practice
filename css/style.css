@@ -43,3 +43,23 @@ body {
 .img-modal {
     float: left;
 }
+
+.modal-h5-first {
+    margin-top: -4px;
+}
+
+.modal-h5-others {
+    margin-top: 12px;
+}
+
+.modal-div {
+    width: 100%;
+    height: inherit;
+    position: relative;    
+    margin: 0;
+    overflow: visible;
+}
+
+.card-left {
+    margin-left: -21px;
+}
