@@ -76,3 +76,8 @@ body {
 .card-left {
     margin-left: -20px;
 }
+
+/* sets the distance between paragraphs */
+.paragraph {
+    margin-top: -10px;
+}
