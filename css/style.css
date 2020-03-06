@@ -1,23 +1,19 @@
+/* changes the body background */
 body {
     background-color: #242424;
 }
 
+/* changes the font color to white */
 .white {
     color: white;
 }
 
+/* changes the font-size to 25px */
 .sub {
     font-size: 25px;
 }
 
-.scrollspy {
-    position: relative;
-    overflow: auto;
-    height: 567px;
-    width: 1120px;
-    text-align: justify;
-}
-
+/* sets the dimensions of the scrollspy body */
 .row-scrollspy {
     display: flex;
     flex-wrap: wrap;
@@ -27,31 +23,47 @@ body {
     margin: 0 auto;
 }
 
+/* sets the dimensions of the scrollspy's div content */
+.scrollspy {
+    position: relative;
+    overflow: auto;
+    height: 567px;
+    width: 1120px;
+    text-align: justify;
+}
+
+/* justifies text content */
 .justify {
     text-align: justify;
 }
 
+/* sets the position of the card row */
 .row-card {
     display: flex;
     margin-left: 40px;
 }
 
+/* enables img overflow automatically */
 .clearfix {
     overflow: auto;
-  }
+}
 
+/* sets the modal img position */
 .img-modal {
     float: left;
 }
 
+/* sets the margin of first modal img */
 .modal-h5-first {
     margin-top: -4px;
 }
 
+/* sets the margin of the other modal imgs */
 .modal-h5-others {
     margin-top: 12px;
 }
 
+/* sets the position and attributes of modal's div */
 .modal-div {
     width: 100%;
     height: inherit;
@@ -60,6 +72,7 @@ body {
     overflow: visible;
 }
 
+/* sets the margin of cards */
 .card-left {
     margin-left: -20px;
 }
