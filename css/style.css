@@ -81,3 +81,8 @@ body {
 .paragraph {
     margin-top: -10px;
 }
+
+/* sets the margin of ul in the cards */
+.ul-margin {
+    margin-left: -20px;
+}
